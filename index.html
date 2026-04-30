@@ -1,35 +1,106 @@
 <html>
+<head>
     <style>
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+
+        h1{
+            text-align: center;
+            color: #2e86de; /* azul bonito */
+        }
+
         section{
             width:100%;
-            height:100%;
-            background-color:lightblue;
+            height:80vh;
             display: flex;
         }
-        #primeiro{
+
+        #primeiro, #terceiro{
             width:20%;
-            height:100%;
-            background-color:red;
+            padding: 20px;
+            background-color: #f5f5f5;
         }
-         #segundo{
+
+        #primeiro h3{
+            color: #27ae60; /* verde */
+        }
+
+        #terceiro h3{
+            color: #e67e22; /* laranja */
+        }
+
+        #segundo{
             width:60%;
-            height:100%;
-            background-color:blue;
+            padding: 30px;
         }
-         #terceiro{
-            width:20%;
-            height:100%;
-            background-color:black;
+
+        h2{
+            color: #8e44ad; /* roxo */
+        }
+
+        ul{
+            list-style: none;
+            padding: 0;
+        }
+
+        li{
+            margin-bottom: 10px;
+            padding: 8px;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        p{
+            line-height: 1.6;
         }
     </style>
-    <body>
-    <header></header>
-    <h1>Receitas</h1>
-    <Section>
-        <div id="primeiro"></div>
-        <div id="segundo"></div>
-        <div id="terceiro"></div>
-    </Section>
-    <footer></footer>
-    </body>
+</head>
+
+<body>
+
+<h1>Rotina da Casa</h1>
+
+<section>
+
+    <div id="primeiro">
+        <h3>Tarefas do Dia</h3>
+        <ul>
+            <li><input type="checkbox"> Arrumar a cama</li>
+            <li><input type="checkbox"> Lavar a louça</li>
+            <li><input type="checkbox"> Varrer a casa</li>
+        </ul>
+    </div>
+
+    <div id="segundo">
+        <h2>Organização diária</h2>
+
+        <p>
+            Manter a casa organizada ajuda a deixar o dia mais leve e produtivo.
+            Comece pelas tarefas mais simples e vá avançando.
+        </p>
+
+        <p>
+            Dividir as tarefas ao longo do dia evita acúmulo de trabalho e deixa tudo mais fácil.
+        </p>
+
+        <p>
+            Dica: faça um pouco de cada vez, assim você não se sobrecarrega.
+        </p>
+    </div>
+
+    <div id="terceiro">
+        <h3>Lembretes</h3>
+        <ul>
+            <li>Comprar produtos de limpeza</li>
+            <li>Lavar roupas no fim do dia</li>
+            <li>Organizar quarto depois que acordar</li>
+        </ul>
+    </div>
+
+</section>
+
+</body>
 </html>
